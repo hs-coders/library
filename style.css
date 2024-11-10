@@ -1,0 +1,52 @@
+ body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            text-align: center;
+        }
+        .title-section {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+			 width: 90%;
+        }
+        .title {
+            font-size: 24px;
+            color: #4CAF50; /* لون العنوان */
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .read, .download {
+            background-color: #4CAF50; /* لون خلفية الأزرار */
+            color: white; /* لون نص الأزرار */
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 50px;
+            margin: 5px;
+        }
+		.close{ background-color: #ff0000; /* لون خلفية الأزرار */
+            color: white; /* لون نص الأزرار */
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 5px;}
+        .read:hover, .download:hover {
+            background-color: #45a049;
+        }
+		.close {
+		background-color: #ff0000;
+		}
+        #driveFileIframe {
+            width: 90%;
+            height: 600px;
+            border: 1px solid #ccc;
+            margin-top: 20px;
+            display: none;
+        }

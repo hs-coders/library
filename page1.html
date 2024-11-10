@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ar">
+<meta charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بكالوريا</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+ <!-- إطار العرض -->
+    <iframe id="driveFileIframe"></iframe>
+<!-- زر اغلاق القراءة -->
+	<button onclick="closeDriveFile()" class="close" style="display:none;">إغلاق</button>
+	<script>function closeDriveFile() {
+            var iframe = document.getElementById('driveFileIframe');
+            iframe.style.display = 'none';
+            document.querySelector('.close').style.display = 'none';
+        }
+ </script>
+ 
+<!--start1-->
+  <div class="title-section">
+		<div class="title">رياضيات هندسة</div> 
+        <div class="buttons">
+            <button onclick="openDriveFile1()" class="read">قراءة</button>
+            <button onclick="downloadDriveFile1()" class="download">تحميل</button>
+        </div>
+  
+</div>  
+
+<!-- end1 1--> 
+<!--start2-->
+ <div class="title-section">
+<div class="title">رياضيات تحليل</div> 
+        <div class="buttons">
+            <button onclick="openDriveFile2()" class="read">قراءة</button>
+            <button onclick="downloadDriveFile2()" class="download">تحميل</button>
+        </div>
+
+  
+</div>  
+
+<!-- end12 --> 
+<!--start3-->
+  <div class="title-section">
+<div class="title">رياضيات جبر</div> 
+        <div class="buttons">
+            <button onclick="openDriveFile3()" class="read">قراءة</button>
+            <button onclick="downloadDriveFile3()" class="download">تحميل</button>
+        </div>
+    </div>   
+
+<!-- end13 --> 
+<!--start4-->
+  <div class="title-section">
+<div class="title">فيزياء</div> 
+        <div class="buttons">
+            <button onclick="openDriveFile4()" class="read">قراءة</button>
+            <button onclick="downloadDriveFile4()" class="download">تحميل</button>
+        </div>
+    </div>  
+
+<!-- end14 --> 
+<!--start5-->
+  <div class="title-section">
+<div class="title">كيمياء</div> 
+        <div class="buttons">
+            <button onclick="openDriveFile5()" class="read">قراءة</button>
+            <button onclick="downloadDriveFile5()" class="download">تحميل</button>
+        </div>
+    </div>  
+    
+<!-- end15 --> 
+<!--start6-->
+  <div class="title-section">
+<div class="title">علوم</div> 
+        <div class="buttons">
+            <button onclick="openDriveFile6()" class="read">قراءة</button>
+            <button onclick="downloadDriveFile6()" class="download">تحميل</button>
+        </div>
+    </div>  
+
+<!-- end16 --> 
+<!--start7-->
+  <div class="title-section">
+<div class="title">عربي</div> 
+        <div class="buttons">
+            <button onclick="openDriveFile7()" class="read">قراءة</button>
+            <button onclick="downloadDriveFile7()" class="download">تحميل</button>
+        </div>
+    </div>  
+  
+<!-- end17 --> 
+<!--start8-->
+  <div class="title-section">
+<div class="title">انكليزي</div> 
+        <div class="buttons">
+            <button onclick="openDriveFile8()" class="read">قراءة</button>
+            <button onclick="downloadDriveFile8()" class="download">تحميل</button>
+        </div>
+    </div>  
+   
+<!-- end18 --> 
+<!--start9-->
+  <div class="title-section">
+<div class="title">تركي</div> 
+        <div class="buttons">
+            <button onclick="openDriveFile9()" class="read">قراءة</button>
+            <button onclick="downloadDriveFile9()" class="download">تحميل</button>
+        </div>
+    </div>  
+    
+<!-- end19 --> 
+<!--start10-->
+  <div class="title-section">
+<div class="title">اسلامية</div> 
+        <div class="buttons">
+            <button onclick="openDriveFile10()" class="read">قراءة</button>
+            <button onclick="downloadDriveFile10()" class="download">تحميل</button>
+        </div>
+    </div>  
+    
+<!-- end1 -->
+
+ 
+<!-- جافا سكربت --> 
+
+<!-- عرض1 -->
+    <script>
+        function openDriveFile1() { 
+var fileId = '1KG6Ofddu-_MyYYfM7Rl35fubLVDa8y3K'; // معرف الملف من Google Drive
+            var driveUrl = 'https://drive.google.com/file/d/' + fileId + '/preview';
+            var iframe = document.getElementById('driveFileIframe');
+            iframe.src = driveUrl;
+            iframe.style.display = 'block';
+            document.querySelector('.close').style.display = 'inline-block';
+        } 
+
+    </script>
+<!-- تحميل1 -->
+    <script>
+        function downloadDriveFile1() { 
+var fileId = '1KG6Ofddu-_MyYYfM7Rl35fubLVDa8y3K'; // معرف الملف من Google Drive
+            var driveUrl = 'https://drive.google.com/uc?export=download&id=' + fileId;
+            window.location.href = driveUrl;
+        } 
+    </script>
+<!-- عرض2 -->
+    <script>
+        function openDriveFile2() { 
+var fileId = '1KOziyDT8OzzpT364mc7K94RV2L7YwZhS'; // معرف الملف من Google Drive
+            var driveUrl = 'https://drive.google.com/file/d/' + fileId + '/preview';
+            var iframe = document.getElementById('driveFileIframe');
+            iframe.src = driveUrl;
+            iframe.style.display = 'block';
+            document.querySelector('.close').style.display = 'inline-block';
+        } 
+       
+    </script>
+<!-- تحميل2 -->
+    <script>
+        function downloadDriveFile2() { 
+var fileId = '1KOziyDT8OzzpT364mc7K94RV2L7YwZhS'; // معرف الملف من Google Drive
+            var driveUrl = 'https://drive.google.com/uc?export=download&id=' + fileId;
+            window.location.href = driveUrl;
+        } 
+    </script>
+ <!-- عرض3 -->
+    <script>
+        function openDriveFile3() { 
+var fileId = '1KDhziP5d9D2bRrv_9VfR-wYHx0PmN8lg'; // معرف الملف من Google Drive
+            var driveUrl = 'https://drive.google.com/file/d/' + fileId + '/preview';
+            var iframe = document.getElementById('driveFileIframe');
+            iframe.src = driveUrl;
+            iframe.style.display = 'block';
+            document.querySelector('.close').style.display = 'inline-block';
+        } 
+       
+    </script>
+<!-- تحميل3 -->
+    <script>
+        function downloadDriveFile3() { 
+var fileId = '1KDhziP5d9D2bRrv_9VfR-wYHx0PmN8lg'; // معرف الملف من Google Drive
+            var driveUrl = 'https://drive.google.com/uc?export=download&id=' + fileId;
+            window.location.href = driveUrl;
+        } 
+    </script>
+<!-- عرض4 -->
+   <script>
+        function openDriveFile4() { 
+var fileId = '1KFAd__l-MgY_Z1dZXnbPAA0a6UE3nt59'; // معرف الملف من Google Drive
+            var driveUrl = 'https://drive.google.com/file/d/' + fileId + '/preview';
+            var iframe = document.getElementById('driveFileIframe');
+            iframe.src = driveUrl;
+            iframe.style.display = 'block';
+            document.querySelector('.close').style.display = 'inline-block';
+        } 
+       
+    </script>
+<!-- تحميل4 -->
+    <script>
+        function downloadDriveFile4() { 
+var fileId = '1KFAd__l-MgY_Z1dZXnbPAA0a6UE3nt59'; // معرف الملف من Google Drive
+            var driveUrl = 'https://drive.google.com/uc?export=download&id=' + fileId;
+            window.location.href = driveUrl;
+        } 
+    </script>	
+<!-- عرض5 -->
+    <script>
+        function openDriveFile5() { 
+var fileId = '1K1LvS7bLQFrUf9FkIOJL8UdSnlmeKjtd'; // معرف الملف من Google Drive
+            var driveUrl = 'https://drive.google.com/file/d/' + fileId + '/preview';
+            var iframe = document.getElementById('driveFileIframe');
+            iframe.src = driveUrl;
+            iframe.style.display = 'block';
+            document.querySelector('.close').style.display = 'inline-block';
+        } 
+        
+    </script>
+<!-- تحميل5 -->
+    <script>
+        function downloadDriveFile5() { 
+var fileId = '1K1LvS7bLQFrUf9FkIOJL8UdSnlmeKjtd'; // معرف الملف من Google Drive
+            var driveUrl = 'https://drive.google.com/uc?export=download&id=' + fileId;
+            window.location.href = driveUrl;
+        } 
+    </script>
+<!-- عرض6 -->
+    <script>
+        function openDriveFile6() { 
+var fileId = '1K-4IE6egm2yy7-DowZEQgsiW11Ge9ETh'; // معرف الملف من Google Drive
+            var driveUrl = 'https://drive.google.com/file/d/' + fileId + '/preview';
+            var iframe = document.getElementById('driveFileIframe');
+            iframe.src = driveUrl;
+            iframe.style.display = 'block';
+            document.querySelector('.close').style.display = 'inline-block';
+        } 
+        
+    </script>
+<!-- تحميل6 -->
+    <script>
+        function downloadDriveFile6() { 
+var fileId = '1K-4IE6egm2yy7-DowZEQgsiW11Ge9ETh'; // معرف الملف من Google Drive
+            var driveUrl = 'https://drive.google.com/uc?export=download&id=' + fileId;
+            window.location.href = driveUrl;
+        } 
+    </script>
+<!-- عرض7 -->
+    <script>
+        function openDriveFile7() { 
+var fileId = '1K8JmPrmgrX7uXtGpUuC546aeMIsmA_KS'; // معرف الملف من Google Drive
+            var driveUrl = 'https://drive.google.com/file/d/' + fileId + '/preview';
+            var iframe = document.getElementById('driveFileIframe');
+            iframe.src = driveUrl;
+            iframe.style.display = 'block';
+            document.querySelector('.close').style.display = 'inline-block';
+        } 
+        
+    </script>
+<!-- تحميل 7-->
+    <script>
+        function downloadDriveFile7() { 
+var fileId = '1K8JmPrmgrX7uXtGpUuC546aeMIsmA_KS'; // معرف الملف من Google Drive
+            var driveUrl = 'https://drive.google.com/uc?export=download&id=' + fileId;
+            window.location.href = driveUrl;
+        } 
+    </script>	
+<!-- عرض8 -->
+    <script>
+        function openDriveFile8() { 
+var fileId = '1JwGfXYWpFGshWCaY9tYcrLJn6SD2ioA_'; // معرف الملف من Google Drive
+            var driveUrl = 'https://drive.google.com/file/d/' + fileId + '/preview';
+            var iframe = document.getElementById('driveFileIframe');
+            iframe.src = driveUrl;
+            iframe.style.display = 'block';
+            document.querySelector('.close').style.display = 'inline-block';
+        } 
+        
+    </script>
+<!-- تحميل 8-->
+    <script>
+        function downloadDriveFile8() { 
+var fileId = '1JwGfXYWpFGshWCaY9tYcrLJn6SD2ioA_'; // معرف الملف من Google Drive
+            var driveUrl = 'https://drive.google.com/uc?export=download&id=' + fileId;
+            window.location.href = driveUrl;
+        } 
+    </script>	
+<!-- عرض9 -->
+    <script>
+        function openDriveFile9() { 
+var fileId = '1JxsGLnz_rv-0PdF2iQtSMQZhzaeDslyt'; // معرف الملف من Google Drive
+            var driveUrl = 'https://drive.google.com/file/d/' + fileId + '/preview';
+            var iframe = document.getElementById('driveFileIframe');
+            iframe.src = driveUrl;
+            iframe.style.display = 'block';
+            document.querySelector('.close').style.display = 'inline-block';
+        } 
+        
+    </script>
+<!-- تحميل9 -->
+    <script>
+        function downloadDriveFile9() { 
+var fileId = '1JxsGLnz_rv-0PdF2iQtSMQZhzaeDslyt'; // معرف الملف من Google Drive
+            var driveUrl = 'https://drive.google.com/uc?export=download&id=' + fileId;
+            window.location.href = driveUrl;
+        } 
+    </script>
+<!-- عرض10 -->
+    <script>
+        function openDriveFile10() { 
+var fileId = '1JsCXJ6YivIk6Qvfzxm_1NAPvlTWkCWrx'; // معرف الملف من Google Drive
+            var driveUrl = 'https://drive.google.com/file/d/' + fileId + '/preview';
+            var iframe = document.getElementById('driveFileIframe');
+            iframe.src = driveUrl;
+            iframe.style.display = 'block';
+            document.querySelector('.close').style.display = 'inline-block';
+        } 
+        
+    </script>
+<!-- تحميل 10-->
+    <script>
+        function downloadDriveFile10() { 
+var fileId = '1JsCXJ6YivIk6Qvfzxm_1NAPvlTWkCWrx'; // معرف الملف من Google Drive
+            var driveUrl = 'https://drive.google.com/uc?export=download&id=' + fileId;
+            window.location.href = driveUrl;
+        } 
+    </script>
+	
+</body>
+</html>

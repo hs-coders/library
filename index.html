@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar">
+<meta charset="UTF-8">
+<head>
+
+    <title>home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #f8f8f8;
+            padding: 20px;
+        }
+        header img {
+            max-width: 20%;
+            height: 20%;
+        }
+        section {
+            margin: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        iframe {
+            width: 90%;
+            height: 1400px;
+            border: 2 px solid #00f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>مرحبا بك في مكتبة المدرسة</h1>
+        <img src="cover.jpeg" alt="library">
+    </header>
+    <section>
+        <button onclick="loadPage('page1.html')">تاسع</button>
+        <button onclick="loadPage('page2.html')">بكلوريا</button>
+    </section>
+
+    <iframe id="contentFrame" src=""></iframe>
+
+    <script>
+        function loadPage(page) {
+            document.getElementById('contentFrame').src = page;
+        }
+    </script>
+</body>
+</html>
